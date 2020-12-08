@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.first-showcase {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+.swiper-wrapper {
+  min-height: 650px;
+  width: 100%;
+}
+.first-showcase-title {
+  background: #11181f;
+  color: #e1e1e1;
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  width: 100%;
+  height: 300px;
+}
+.first-showcase-title p {
+  max-width: 500px;
+  margin: auto;
+  font-size: 15px;
+}
+
+.swiper-slide {
+  width: 280px;
+}
+.swiper-slide-content {
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.swiper-slide-content h3 {
+  color: #11181f;
+  font-family: sans-serif;
+}
+.swiper-slide-content p {
+  color: #585757;
+  font-family: sans-serif;
+  font-size: 15px;
+  max-width: 280px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 450px;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+}
+.view-app {
+  display: none;
+}
+.view-all-application {
+  height: 100px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.view-all-application button {
+  width: 200px;
+  height: 50px;
+  background: #11181f;
+  border: none;
+}
+.view-all-application button a {
+  text-decoration: none;
+  color: #e1e1e1;
+}
+
+@media (min-width: 800px) {
+  .swiper-wrapper {
+    min-height: 900px;
+  }
+
+  .first-showcase-title p {
+    max-width: 600px;
+    font-size: 24px;
+  }
+  .swiper-slide-content {
+    gap: 20px;
+  }
+  .swiper-slide-content p {
+    max-width: 400px;
+  }
+  .swiper-slide img {
+    height: 600px;
+  }
+  .view-app {
+    display: block;
+  }
+
+  .view-app a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1000px) {
+  .swiper-wrapper {
+    min-height: 1200px;
+    width: 100%;
+  }
+
+  .swiper-slide-content {
+    gap: 30px;
+  }
+  .swiper-slide-content h3 {
+    font-size: 28px;
+  }
+  .swiper-slide-content p {
+    max-width: 500px;
+  }
+  .swiper-slide img {
+    height: 850px;
+  }
+
+  .view-app a {
+    font-size: 16px;
+  }
+}
